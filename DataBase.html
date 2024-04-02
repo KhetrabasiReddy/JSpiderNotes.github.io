@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSpider Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Database</h1>
+        <div class="section">
+            <h2>Database</h2>
+            <p>Database is a software which is used to store the application data.</p>
+        </div>
+        <div class="section">
+            <h2>Oracle DB</h2>
+            <p>It is a RDBMS(Relational Database Management System).</p>
+            <p>In al RDBMS data will be stored in rows and columns format (or tabular format.)</p>
+            <h3>Student</h3>
+            <table class="table">
+                <tr>
+                    <th>SId</th>
+                    <th>SName</th>
+                    <th>SPhno</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Khetrabasi</td>
+                    <td>199</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ram</td>
+                    <td>108</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Laxman</td>
+                    <td>100</td>
+                </tr>
+
+            </table>
+            <p> Example of RDBMS: MySQL, Oracle, Postgre SQL, DB2, SQL server</p>
+        </div>
+        <div class="section">
+            <h2>MongoDB</h2>
+            <p>It is a No-SQL DBMS.</p>
+            <p>In No-SQL DBMS data will be organized in non-tabular format(i.e keys and values pair).</p>
+            <p>Ex: Student = {SId: 1, SName: "Ram", SPhno:108}</p>
+            <p>Where SId, SName & SPhno are keys & 1, "Ram" & 108 are values.</p>
+
+        </div>
+        <div class="section">
+            <h2>SQL( Structured Query Language)</h2>
+            <p>SQL is a collection of commands, clauses, Operators & functions.</p>
+            <p>It is used to communicate with DB in the form of <u>queries</u>.</p>
+            <img src="Images/sql queries.jpeg" alt="figure of sql queries and developer" width="400">
+
+        </div>
+        <div class="section">
+            <h2>Classification of SQL Commands:</h2>
+            <ol>
+                <li>Data Query Language(DQL)</li>
+                <li>Data Defination Language</li>
+                <li>Data Manipulation Language(DML)</li>
+                <li>Data Transaction / Transaction Control Language</li>
+                <li>Data Control Language</li>
+            </ol>
+        </div>
+        <div class="section">
+            <h2>Data Query Language(DQL)</h2>
+            <p>By using the DQL commands we can fetch data from database.</p>
+            <p>To learn DQL commands we use scott user DB.(Scott is a default user in oracle database.)</p>
+            <p>Scott user has four tables i.e Dept, Emp, bonus & Salgrade.</p>
+            <p>To fetch the infomation from DB we use clauses.</p>
+            <dl>
+                <dt><u>Select:</u></dt>
+                <dd>By using select clause we can decide the number of columns to be fetched.</dd>
+                <dt><u>From:</u></dt>
+                <dd>By using from clause we can decide from which table we need to fetch the infomation.</dd>
+            </dl>
+            <table class="table" style="text-align:center;">
+                <h3>Dept</h3>
+                <tr>
+                    <th>Dept no</th>
+                    <th>DName</th>
+                    <th>Loc</th>
+                </tr>
+                <tr >
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                </tr>
+                <tr>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                </tr>
+                <tr>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                    <td>- - -</td>
+                </tr>
+
+            </table>
+                <div class="code">
+                    <pre>->Select * From Dept;
+->Select Dname From Dept;
+->Select DName, Loc from Dept;</pre>
+                </div>
+
+
+            
+        </div>
+        <div class="section">
+           <p class="question">
+            Write a query to fetch all the tables from 'Scott' user.
+           </p>
+           <p>Ans:<pre>     Select * from tab;</pre></p>
+        </div>
+        <div class="section">
+            <p>SQL is not a case-sensitive language.</p>
+            <p>SQL queries must end with a semi-colon.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
