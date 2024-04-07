@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="/Pages/notes.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Database</h1>
+        <div class="section">
+            <h2>SQL</h2>
+            <li>SQL stands for Structured Query Language.</li>
+            <li>It is introduced & managed by Oracle. </li>
+            <li>It is a Back-end language which is used to communicate with our database.</li>
+        </div>
+        <div class="section">
+            <h2>Database</h2>
+            <ul>
+                <li>Database is a storage location which is used to store any kind of data.</li>
+                <li>The four important taks related to database are:
+                    <ol>
+                        <li>Inserting Data</li>
+                        <li>Updating Data</li>
+                        <li>Deleting Data</li>
+                        <li>Fetching Data</li>
+                    </ol>
+
+                </li>
+            </ul>
+
+        </div>
+        <div class="section">
+            <h2>DBMS(Database Management System)</h2>
+            <ul>
+                <li>
+                    It is a software which is used to commuicate between programmer and Database.
+                </li>
+                <li>The four importnt tasks related to database like: INSERTING, DELETING, UPDATING AND FETCHING data from the database is done by the help of DBMS.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Types of DBMS</h2>
+            <ul>
+                <li>RDBMS: Relational Database Management System</li>
+                <li>OODBMS: Object Oriented Database Management System</li>
+                <li>HDBMS: Hierarchical Database Management System</li>
+                <li>NDBMS: Network Database Management System</li>
+                <li>NOSQL DBMS: No Structured Query Language Database Management System</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>RDBMS:</h2>
+            <ul>
+                <li>It stores the data in the form of tables.</li>
+                <li>It deals with rows and columns.</li>
+                <li>Example: Oracle, DB2, MySQL etc.</li>
+            </ul>
+
+        </div>
+        <div class="section">
+            <h2>OODBMS:</h2>
+            <ul>
+                <li>It is used to store the data in the form of Objects.</li>
+                <li>
+                    Example: Student s1 = new Student(1, "ram", 234);
+                            Student s2 = new Student(2, "laxman", 2423);
+
+
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>HDBMS:</h2>
+            <ul>
+                <li>In HDBMS the data is stored in the form of tree.</li>
+                <li>In case of HDBMS data are independent means there  is no interconnnection between any data.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>NDBMS:</h2>
+            <ul>
+                <li>It stores the data in the form of tree.</li>
+                <li>In case of NDBMS, Data are interconnected to each other which means any data is depend on other data.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>NoSQL DBMS:</h2>
+            <ul>
+                <li>It store the data in keys and values format.</li>
+                <li>It deals with files.</li>
+                <li>Ex: Mongo DB.</li>
+               
+                <pre class="code"> Student = {
+                id: 1,
+                name: "ram",
+                age: 23    
+            }</pre>
+               
+            </ul>
+        </div>
+    <div class="section" style="display:flex; flex: 1; justify-content:center;">
+        <div class="section">
+            <h2>DBMS</h2>
+            <ol>
+                <li>It deals with Files.</li>
+                <li>It cannot support Client & Server relationship.</li>
+                <li>It cannot follow "Normalization" rules.</li>
+                <li>It cannot support constraints.</li>
+            </ol>
+        </div>
+        <div class="section">
+            <h2>RDBMS</h2>
+            <ol>
+                <li>It deals with tables.</li>
+                <li>It supports Client & Server relationship.</li>
+                <li>It follows "Normalization" Rules.</li>
+                <li>It support the constraints.</li>
+            </ol>
+        </div>
+    </div>        
+    <div class="section">
+        <h2>ER Diagram:(Entity Relationship Diagram) </h2>
+        <ul>
+            <li>It is used to display the relationship between entities, depicting how one entity is related to other entity.</li>
+            <li>It follows some standard orders i.e:</li>
+            <ol>
+                <li>Entity(table): Always denoted in Square shape.</li>
+                <li>Attributes(columns): Always denoted in Oval shape</li>
+                <li>Relationship: It is mandatory and is denoted by Rhombus shape..</li>
+            </ol>
+        </ul>
+      <div class="section" style="display:flex;padding:30px; justify-content:center;align-items:stretch; text-align: center;">
+        <div style=" margin:0 10px;border:1px solid white; padding:10px;width:70px;height:60px;">
+            Entity
+          </div>
+          <div style=" margin:0 10px;border:1px solid white; border-radius:50%; height:50px;width:70px; ">Oval</div>
+          <div style=" margin:0 10px;border:1px solid white; transform:rotate(50deg);width:65px;height:65px;">Relation</div>
+      </div>
+          
+          
+          
+    </div>
+
+    </div>
+</body>
+
+</html>

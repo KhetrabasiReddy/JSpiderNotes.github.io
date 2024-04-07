@@ -25,29 +25,24 @@ h1{
     color:white;
     padding:5px;
     .question{
-        animation:fade 1s infinite linear;
+        color:greenyellow;
+        font-weight:900;
+        
     }
 }
-@keyframes fade{
-    from{
-        color:red;
-    }to{
-        color:whitesmoke;
-    }
-}
+
 
 table, td, tr, th{
     border:1px solid black;
     border-collapse:collapse;
     padding:4px;  
 }
-ol{
+ol,ul{
     list-style-position:inside;
-   
+  
 }
 
 .code{
     background-color: black;
-
-
+    padding:10px;
 }
