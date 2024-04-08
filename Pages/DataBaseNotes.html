@@ -10,14 +10,35 @@
 
 <body>
     <div class="container">
+
+        <div class=" section content">
+            <h1>Content</h1>
+            <ol>
+                <li>
+                    <a href="#sql">SQL</a>
+                </li>
+                <li><a href="#database">Database</a></li>
+                <li><a href="#dbms">DBMS(Database Management System)</a></li>
+                <li><a href="#typesofdbms">Types of DBMS</a></li>
+                <li><a href="#rdbms">RDBMS</a></li>
+                <li><a href="#hdbms">HDBMS</a></li>
+                <li><a href="#ndbms">NDBMS</a></li>
+                <li><a href="#nosqldbms">No-SQL DBMS</a></li>
+                <li><a href="#differenceBetweenDbmsAndRdbms">DBMS vs RDBMS</a></li>
+                <li><a href="#erdiagram">ER Diagram</a></li>
+                <li><a href="#sqlNOTE">SQL Important NOTES!!!</a></li>
+                <li><a href="#qp1">Queries Practices</a></li>
+            </ol>
+        </div>
+
         <h1>Database</h1>
-        <div class="section">
+        <div class="section" id="sql">
             <h2>SQL</h2>
             <li>SQL stands for Structured Query Language.</li>
             <li>It is introduced & managed by Oracle. </li>
             <li>It is a Back-end language which is used to communicate with our database.</li>
         </div>
-        <div class="section">
+        <div class="section" id="database">
             <h2>Database</h2>
             <ul>
                 <li>Database is a storage location which is used to store any kind of data.</li>
@@ -33,7 +54,7 @@
             </ul>
 
         </div>
-        <div class="section">
+        <div class="section" id="dbms">
             <h2>DBMS(Database Management System)</h2>
             <ul>
                 <li>
@@ -42,7 +63,7 @@
                 <li>The four importnt tasks related to database like: INSERTING, DELETING, UPDATING AND FETCHING data from the database is done by the help of DBMS.</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="typesofdbms">
             <h2>Types of DBMS</h2>
             <ul>
                 <li>RDBMS: Relational Database Management System</li>
@@ -52,7 +73,7 @@
                 <li>NOSQL DBMS: No Structured Query Language Database Management System</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="rdbms">
             <h2>RDBMS:</h2>
             <ul>
                 <li>It stores the data in the form of tables.</li>
@@ -61,7 +82,7 @@
             </ul>
 
         </div>
-        <div class="section">
+        <div class="section" id="oodbms">
             <h2>OODBMS:</h2>
             <ul>
                 <li>It is used to store the data in the form of Objects.</li>
@@ -73,21 +94,21 @@
                 </li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="hdbms">
             <h2>HDBMS:</h2>
             <ul>
                 <li>In HDBMS the data is stored in the form of tree.</li>
                 <li>In case of HDBMS data are independent means there  is no interconnnection between any data.</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="ndbms">
             <h2>NDBMS:</h2>
             <ul>
                 <li>It stores the data in the form of tree.</li>
                 <li>In case of NDBMS, Data are interconnected to each other which means any data is depend on other data.</li>
             </ul>
         </div>
-        <div class="section">
+        <div class="section" id="nosqldbms">
             <h2>NoSQL DBMS:</h2>
             <ul>
                 <li>It store the data in keys and values format.</li>
@@ -102,48 +123,89 @@
                
             </ul>
         </div>
-    <div class="section" style="display:flex; flex: 1; justify-content:center;">
-        <div class="section">
-            <h2>DBMS</h2>
-            <ol>
-                <li>It deals with Files.</li>
-                <li>It cannot support Client & Server relationship.</li>
-                <li>It cannot follow "Normalization" rules.</li>
-                <li>It cannot support constraints.</li>
-            </ol>
+        <div class="section" style="display:flex; flex: 1; justify-content:center;" id="differenceBetweenDbmsAndRdbms">
+            <div class="section">
+                <h2>DBMS</h2>
+                <ol>
+                    <li>It deals with Files.</li>
+                    <li>It cannot support Client & Server relationship.</li>
+                    <li>It cannot follow "Normalization" rules.</li>
+                    <li>It cannot support constraints.</li>
+                </ol>
+            </div>
+            <div class="section">
+                <h2>RDBMS</h2>
+                <ol>
+                    <li>It deals with tables.</li>
+                    <li>It supports Client & Server relationship.</li>
+                    <li>It follows "Normalization" Rules.</li>
+                    <li>It support the constraints.</li>
+                </ol>
+            </div>
+        </div>        
+        <div class="section" id="erdiagram">
+            <h2>ER Diagram:(Entity Relationship Diagram) </h2>
+            <ul>
+                <li>It is used to display the relationship between entities, depicting how one entity is related to other entity.</li>
+                <li>It follows some standard orders i.e:</li>
+                <ol>
+                    <li>Entity(table): Always denoted in Square shape.</li>
+                    <li>Attributes(columns): Always denoted in Oval shape</li>
+                    <li>Relationship: It is mandatory and is denoted by Rhombus shape..</li>
+                </ol>
+            </ul>
+        <div class="section" style="display:flex;padding:30px; justify-content:center;align-items:stretch; text-align: center;">
+            <div style=" margin:0 10px;border:1px solid white; padding:10px;width:70px;height:60px;">
+                Entity
+            </div>
+            <div style=" margin:0 10px;border:1px solid white; border-radius:50%; height:50px;width:70px; ">Oval</div>
+            <div style=" margin:0 10px;border:1px solid white; transform:rotate(50deg);width:65px;height:65px;">Relation</div>
         </div>
-        <div class="section">
-            <h2>RDBMS</h2>
-            <ol>
-                <li>It deals with tables.</li>
-                <li>It supports Client & Server relationship.</li>
-                <li>It follows "Normalization" Rules.</li>
-                <li>It support the constraints.</li>
-            </ol>
+            
+            
+            
         </div>
-    </div>        
-    <div class="section">
-        <h2>ER Diagram:(Entity Relationship Diagram) </h2>
-        <ul>
-            <li>It is used to display the relationship between entities, depicting how one entity is related to other entity.</li>
-            <li>It follows some standard orders i.e:</li>
-            <ol>
-                <li>Entity(table): Always denoted in Square shape.</li>
-                <li>Attributes(columns): Always denoted in Oval shape</li>
-                <li>Relationship: It is mandatory and is denoted by Rhombus shape..</li>
-            </ol>
-        </ul>
-      <div class="section" style="display:flex;padding:30px; justify-content:center;align-items:stretch; text-align: center;">
-        <div style=" margin:0 10px;border:1px solid white; padding:10px;width:70px;height:60px;">
-            Entity
-          </div>
-          <div style=" margin:0 10px;border:1px solid white; border-radius:50%; height:50px;width:70px; ">Oval</div>
-          <div style=" margin:0 10px;border:1px solid white; transform:rotate(50deg);width:65px;height:65px;">Relation</div>
-      </div>
-          
-          
-          
-    </div>
+        <div class="section" id="sqlNOTE">
+            <h2>NOTE!</h2>
+            <ul>
+                <li>SQL is not case sensitive.</li>
+                <li>SQL is format sensitive.</li>
+                <li>Each and every sql query must be finished with semi-colon(;).</li>
+                <li>If we are not finishing by semi-colon, then it will terminated & generate a new line for new query.</li>
+                <li>In SQL class software system is the "ADMIN". Scott and HR are the "users".</li>
+
+            </ul>
+        </div>
+        <div class="section" id="qp1">
+            <h2>Query Practices 1:</h2>
+            <div class="question">To Check All the User Names:</div>
+            <div class="code">
+                sql> select * from all_users;
+            </div>
+            <div class="question">
+                To show the current user name.
+            </div>
+            <div class="code">sql> show user;</div>
+            <div class="question">To set pagesize and line size:</div>
+            <div class="code">sql> set pages 120 lines 234;</div>
+            <div class="question">WAQTD all employee names, department number, designation & commision.</div>
+            <div class="code">sql> select ename, deptno, job, comm from emp;</div>
+            <div class="question">WAQTD department name and department location.</div>
+            <div class="code">sql> select  dname, loc from dept;</div>
+            <div class="question">WAQTD all employee id, name, reporting manager number and salary.
+                
+            </div>
+            <div class="code">sql> select empno, ename, mgr, sal from emp;</div>
+
+            <div class="question">
+                WAQTD higher and lower salary.
+            </div>
+            <div class="code">select hisal, losal from salgrade;</div>
+            <div class="question">
+                WAQTD all employee names, joining date and current salary.
+            </div>
+            <div class="code">sql> select ename, hiredate, sal from emp;</div>
+        </div>
 
     </div>
 </body>
