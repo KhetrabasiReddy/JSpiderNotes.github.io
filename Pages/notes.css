@@ -10,15 +10,12 @@
 body{
     padding:5px;
     /* background:linear-gradient(to right,rgba(0, 0, 0, 0.596), rgba(56, 46, 56, 0.507)); */
-    background-color:rgba(25, 232, 232, 0.839);
+    background-color:rgb(4, 132, 132);
     font-family: "Tilt Neon", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     word-spacing: 5px;
-
-    
-
 }
 .content a{
     text-decoration: none;
@@ -47,7 +44,7 @@ h1{
     color:white;
     padding:10px;
     .question{
-        color:red;
+        
         font-weight:900;
         
     }
