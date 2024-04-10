@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database</title>
     <link rel="stylesheet" href="notes.css">
-    
+
 </head>
 
 <body>
-    
+
     <div class="container">
 
         <div class=" section content">
@@ -30,6 +30,9 @@
                 <li><a href="#erdiagram">ER Diagram</a></li>
                 <li><a href="#sqlNOTE">SQL Important NOTES!!!</a></li>
                 <li><a href="#qp1">Queries Practices</a></li>
+                <li><a href="#datatypes">Datatypes</a></li>
+                <li><a href="#literals">Literals</a></li>
+                <li><a href="#dual">Dual</a></li>
             </ol>
         </div>
 
@@ -62,7 +65,8 @@
                 <li>
                     It is a software which is used to commuicate between programmer and Database.
                 </li>
-                <li>The four importnt tasks related to database like: INSERTING, DELETING, UPDATING AND FETCHING data from the database is done by the help of DBMS.</li>
+                <li>The four importnt tasks related to database like: INSERTING, DELETING, UPDATING AND FETCHING data
+                    from the database is done by the help of DBMS.</li>
             </ul>
         </div>
         <div class="section" id="typesofdbms">
@@ -90,7 +94,7 @@
                 <li>It is used to store the data in the form of Objects.</li>
                 <li>
                     Example: Student s1 = new Student(1, "ram", 234);
-                            Student s2 = new Student(2, "laxman", 2423);
+                    Student s2 = new Student(2, "laxman", 2423);
 
 
                 </li>
@@ -100,14 +104,15 @@
             <h2>HDBMS:</h2>
             <ul>
                 <li>In HDBMS the data is stored in the form of tree.</li>
-                <li>In case of HDBMS data are independent means there  is no interconnnection between any data.</li>
+                <li>In case of HDBMS data are independent means there is no interconnnection between any data.</li>
             </ul>
         </div>
         <div class="section" id="ndbms">
             <h2>NDBMS:</h2>
             <ul>
                 <li>It stores the data in the form of tree.</li>
-                <li>In case of NDBMS, Data are interconnected to each other which means any data is depend on other data.</li>
+                <li>In case of NDBMS, Data are interconnected to each other which means any data is depend on other
+                    data.</li>
             </ul>
         </div>
         <div class="section" id="nosqldbms">
@@ -116,13 +121,13 @@
                 <li>It store the data in keys and values format.</li>
                 <li>It deals with files.</li>
                 <li>Ex: Mongo DB.</li>
-               
+
                 <pre class="code"> Student = {
             id: 1,
             name: "ram",
             age: 23    
         }</pre>
-               
+
             </ul>
         </div>
         <div class="section" style="display:flex; flex: 1; justify-content:center;" id="differenceBetweenDbmsAndRdbms">
@@ -144,30 +149,34 @@
                     <li>It support the constraints.</li>
                 </ol>
             </div>
-        </div>        
-        <div class="section" id="erdiagram">
-           <div class="section">
-            <h2>ER Diagram(Entity Relationship Diagram):- </h2>
-            <ul>
-                <li>It is used to display the relationship between entities, depicting how one entity is related to other entity.</li>
-                <li>It follows some standard orders i.e:</li>
-                <ol>
-                    <li>Entity(table): Always denoted in Square shape.</li>
-                    <li>Attributes(columns): Always denoted in Oval shape</li>
-                    <li>Relationship: It is mandatory and is denoted by Rhombus shape..</li>
-                </ol>
-            </ul>
-           </div>
-        <div class="section" style="display:flex;padding:30px; justify-content:center;align-items:stretch; text-align: center;">
-            <div style=" margin:0 10px;border:1px solid white; padding:10px;width:70px;height:60px;">
-                Entity
-            </div>
-            <div style=" margin:0 10px;border:1px solid white; border-radius:50%; height:50px;width:70px; ">Oval</div>
-            <div style=" margin:0 10px;border:1px solid white; transform:rotate(50deg);width:65px;height:65px;">Relation</div>
         </div>
-            
-            
-            
+        <div class="section" id="erdiagram">
+            <div class="section">
+                <h2>ER Diagram(Entity Relationship Diagram):- </h2>
+                <ul>
+                    <li>It is used to display the relationship between entities, depicting how one entity is related to
+                        other entity.</li>
+                    <li>It follows some standard orders i.e:</li>
+                    <ol>
+                        <li>Entity(table): Always denoted in Square shape.</li>
+                        <li>Attributes(columns): Always denoted in Oval shape</li>
+                        <li>Relationship: It is mandatory and is denoted by Rhombus shape..</li>
+                    </ol>
+                </ul>
+            </div>
+            <div class="section"
+                style="display:flex;padding:30px; justify-content:center;align-items:stretch; text-align: center;">
+                <div style=" margin:0 10px;border:1px solid white; padding:10px;width:70px;height:60px;">
+                    Entity
+                </div>
+                <div style=" margin:0 10px;border:1px solid white; border-radius:50%; height:50px;width:70px; ">Oval
+                </div>
+                <div style=" margin:0 10px;border:1px solid white; transform:rotate(50deg);width:65px;height:65px;">
+                    Relation</div>
+            </div>
+
+
+
         </div>
         <div class="section" id="sqlNOTE">
             <h2>NOTE!</h2>
@@ -175,7 +184,8 @@
                 <li>SQL is not case sensitive.</li>
                 <li>SQL is format sensitive.</li>
                 <li>Each and every sql query must be finished with semi-colon(;).</li>
-                <li>If we are not finishing by semi-colon, then it will terminated & generate a new line for new query.</li>
+                <li>If we are not finishing by semi-colon, then it will terminated & generate a new line for new query.
+                </li>
                 <li>In SQL class software system is the "ADMIN". Scott and HR are the "users".</li>
 
             </ul>
@@ -195,9 +205,9 @@
             <div class="question">WAQTD all employee names, department number, designation & commision.</div>
             <div class="code">sql> select ename, deptno, job, comm from emp;</div>
             <div class="question">WAQTD department name and department location.</div>
-            <div class="code">sql> select  dname, loc from dept;</div>
+            <div class="code">sql> select dname, loc from dept;</div>
             <div class="question">WAQTD all employee id, name, reporting manager number and salary.
-                
+
             </div>
             <div class="code">sql> select empno, ename, mgr, sal from emp;</div>
 
@@ -209,6 +219,97 @@
                 WAQTD all employee names, joining date and current salary.
             </div>
             <div class="code">sql> select ename, hiredate, sal from emp;</div>
+        </div>
+        <div class="section" id="datatypes">
+            <h2>Datatypes:</h2>
+            <ul>
+                <li>There are three datatypes:
+                    <ol>
+                        <li>Number</li>
+                        <li>Varchar</li>
+                        <li>Date</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="section">
+                <h3>Number:</h3>
+                <ul>
+                    <li>Number datatype is used to provide integer and double values.</li>
+                    <li>By default number datatype will accept integer values.</li>
+                    <li>Size is not mandatory for number datatype.</li>
+                    <li>Single quote is not mandatory for number datatypes.</li>
+                    <li>Syntax:
+                        <span class="code">number(size)</span>
+                        <span>Or</span>
+                        <span class="code">number</span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="section">
+                <h3>Varchar:</h3>
+                <ul>
+                    <li>Varchar is used to provide String and character type of data.</li>
+                    <li>Incase of varchar size is mandatory.</li>
+                    <li>It is mandatory to declare varchar inside sigle quotes.</li>
+                    <li>Syntax: <span class="code">varchar(size)</span></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Date:</h3>
+                <ul>
+                    <li>Date is used to provide any dates format.</li>
+                    <li>Incase of date size is not required.</li>
+                    <li>Date datatype is mandatory to declare inside single quotes.</li>
+                    <li>Syntax: <span class="code">date</span></li>
+                    <li>Examples:
+                        <div class="code">
+                            '11-<u>Nov</u>ember-19<u>99</u>' => '11-Nov-99'
+                        </div>
+                        <div class="code">
+                            '1-<u>Jan</u>ember-20<u>02</u>' => '01-Jan-02'
+                        </div>
+                        <div class="code">
+                            '11/<u>Nov</u>ember/19<u>99</u>' => '11-Nov-99'
+                        </div>
+                        <div class="code">
+                            '11/01/1999' => it will show error
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="question">How to check the description of any table?</div>
+            <div class="code">sql>desc table_name;</div>
+            
+        </div>
+        <div class="section" id="literals">
+            <h2>Literals:</h2>
+            <ul>
+                <li>The values which we need to store for any particular datatype is known as literals.</li>
+                <li>Examples: int a = 10;</li>
+            </ul>
+        </div>
+        <div class="section" id="dual">
+            <h2>Dual:</h2>
+            <ul>
+                <li>Dual is a dummy table which exist internally sql * plus software.</li>
+                <li>Dual is used to work with our own literals.</li>
+                <li>Dual having one column and one record, we can check the description of dual.</li>
+                <li>
+                    <div class="code">
+                        sql>desc dual; <br>
+                        sql>select * from dual;<br>
+                        sql>select 'good morning' from emp;<br>
+                        sql>select 234 from dual;
+                        
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </div>

@@ -28,10 +28,6 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     text-decoration-line:underline;
-  
-}
-h2{
-    color:black;
 }
 h1{
     text-align:center;
@@ -44,9 +40,7 @@ h1{
     color:white;
     padding:10px;
     .question{
-        
         font-weight:900;
-        
     }
     .question::before{
         content:"Q) "
@@ -61,7 +55,6 @@ table, td, tr, th{
 }
 ol,ul{
     list-style-position:inside;
-  
 }
 
 .code{
