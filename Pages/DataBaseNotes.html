@@ -29,10 +29,12 @@
                 <li><a href="#differenceBetweenDbmsAndRdbms">DBMS vs RDBMS</a></li>
                 <li><a href="#erdiagram">ER Diagram</a></li>
                 <li><a href="#sqlNOTE">SQL Important NOTES!!!</a></li>
-                <li><a href="#qp1">Queries Practices</a></li>
+                <li><a href="#qp1">Queries Practices Set 1</a></li>
                 <li><a href="#datatypes">Datatypes</a></li>
                 <li><a href="#literals">Literals</a></li>
                 <li><a href="#dual">Dual</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#qp2">Queries Practice Set 2</a></li>
             </ol>
         </div>
 
@@ -239,9 +241,9 @@
                     <li>Size is not mandatory for number datatype.</li>
                     <li>Single quote is not mandatory for number datatypes.</li>
                     <li>Syntax:
-                        <span class="code">number(size)</span>
-                        <span>Or</span>
-                        <span class="code">number</span>
+                        <div class="code">
+                            number(size) or number
+                        </div>
                     </li>
 
                 </ul>
@@ -310,6 +312,48 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="section" id="operators">
+            <h2>Operators:</h2>
+            <ul>
+                <li>Arithmatic Operators( +, -, *, / )</li>
+                <li>Character Operators( || for concatenation )</li>
+                <li>Relational Operators( =, != or &lt;&gt;, &gt;, &lt;, &gt;=, &lt;= )</li>
+                <li>Logical Operators(AND, OR, NOT)</li>
+                <li>Special Operators(AS, In, Between, Like, IS)</li>
+                <li>Set Operators( Union, Unionall, Intersect, Minus )</li>
+            </ul>
+        </div>
+        <div class="section" id="qp2">
+            <h2>Query Practices 2:</h2>
+            <div class="question">WAQTD all employees name, designation, actual salary and the salary increasing 200/- rupees for all employees.</div>
+            <div class="code">
+                sql> select ename, job, sal, sal + 200 from emp;
+            </div>
+            <div class="question">
+                WAQTD all employee id, name, salary and deducted 200/- rupess commision from each employees.
+            </div>
+            <div class="code">
+                sql> select empno, ename, sal, comm - 200 from emp;
+            </div>
+            <div class="question">
+                WAQTD all employees names, salary and thier daily salary in the month of January.
+            </div>
+            <div class="code">
+                sql> select ename, sal, sal/31 from emp;
+            </div>
+            <div class="question">
+                WAQTD all employee names, their reporting manage number and yearly salary of all employees.
+            </div>
+            <div class="code">
+                sql> select ename, mgr, sal * 12 from emp;
+            </div>
+            <div class="question">
+                WAQTD all employees names, designation, department number, actual salary and 35% hike of salary for each and every employee.
+            </div>
+            <div class="code">
+                sql> select ename, job, deptno, sal, sal+(sal*0.35) from emp;
+            </div>
         </div>
 
     </div>
