@@ -46,6 +46,11 @@ h1{
         content:"Q) "
     }
 }
+.danger{
+    color:red;
+    margin:0 5px;
+}
+
 
 
 table, td, tr, th{

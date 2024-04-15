@@ -278,7 +278,7 @@
                         <div class="code">
                             '11/01/1999' => it will show error
                         </div>
-                       
+
                     </li>
                 </ul>
             </div>
@@ -287,7 +287,7 @@
         <div class="section">
             <div class="question">How to check the description of any table?</div>
             <div class="code">sql>desc table_name;</div>
-            
+
         </div>
         <div class="section" id="literals">
             <h2>Literals:</h2>
@@ -308,7 +308,7 @@
                         sql>select * from dual;<br>
                         sql>select 'good morning' from emp;<br>
                         sql>select 234 from dual;
-                        
+
                     </div>
                 </li>
             </ul>
@@ -326,7 +326,8 @@
         </div>
         <div class="section" id="qp2">
             <h2>Query Practices 2:</h2>
-            <div class="question">WAQTD all employees name, designation, actual salary and the salary increasing 200/- rupees for all employees.</div>
+            <div class="question">WAQTD all employees name, designation, actual salary and the salary increasing 200/-
+                rupees for all employees.</div>
             <div class="code">
                 sql> select ename, job, sal, sal + 200 from emp;
             </div>
@@ -349,12 +350,72 @@
                 sql> select ename, mgr, sal * 12 from emp;
             </div>
             <div class="question">
-                WAQTD all employees names, designation, department number, actual salary and 35% hike of salary for each and every employee.
+                WAQTD all employees names, designation, department number, actual salary and 35% hike of salary for each
+                and every employee.
             </div>
             <div class="code">
                 sql> select ename, job, deptno, sal, sal+(sal*0.35) from emp;
             </div>
+            <div class="section">
+                <h3>Arithmetic Operators with datatypes:</h3>
+                <table>
+                    <tr>
+                        <th>Datatypes</th>
+                        <th>Supporting Operators</th>
+                    </tr>
+                    <tr>
+                        <td>Varchar</td>
+                        <td>No Operators Supported</td>
+                    </tr>
+                    <tr>
+                        <td>Number</td>
+                        <td>+ , - , * , /</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>+ , -</td>
+                    </tr>
+                </table>
+                <div class="section">
+                    Examples:
+                    <div class="code">sql> select dept,dept+10 from emp;</div>
+                    <div class="code">sql> select ename, ename+200 from emp;<span class="danger">(It will give an
+                            error)</span></div>
+                    <div class="code">sql>select hiredate,hiredate+10 from emp;<span class="danger">(It will add 10days
+                            in the hiredate)</span></div>
+                </div>
+            </div>
         </div>
+        <div class="section">
+            <h2>Aliasing:</h2>
+            <ul>
+                <li>Aliasing means temporarily renaming column or table names.</li>
+                <li>Due to aliasing the actual table doesn't get affacted.</li>
+                <li>Aliasing can perform by using "AS" keyword.</li>
+                <li>"AS" is a special operators in SQL.</li>
+            </ul>
+            <div class="section">
+                <h3>Column Name Aliasing:</h3>
+                <ul>
+                    <li>Column name changed for temporarily.</li>
+                    <li>"AS" keyword is not mandatory for column name aliasing purpose.</li>
+                    <li>We cannot provide any space while changing the column names.</li>
+
+                </ul>
+                <div class="section">
+                    <h4>Examples:</h4>
+                    <ul>
+                        <li class="code">sql> select sql as actual_salary, sal+500 as bonus from emp;</li>
+                        <li class="code">select 'good morning' as wish from dual;</li>
+                        <li class="code">select empno empID from emp;</li>
+                        <li class="code">select empno emp number from emp;<span class="danger">(It will throw an error)</span></li>
+                        <li class="code">select empno 'emp number' from emp;<span class="danger">(It will throw an error)</span></li>
+                        <li class="code">select empno as 'emp number' from emp;<span class="danger">(It will throw an error)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 </body>
