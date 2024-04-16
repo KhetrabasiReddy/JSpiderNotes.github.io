@@ -8,5 +8,19 @@
     word-spacing: 5px;
     transition:all 0.5s;
 }
+body{
+    background-color:honeydew;
+}
+#content-btn{
+    position:fixed;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0.5;
+    height:20vh;
+    &:hover{
+        opacity:1;
+        
+    }
+   
 
-
+}
