@@ -36,6 +36,7 @@
                 <li><a href="#operators">Operators</a></li>
                 <li><a href="#qp2">Queries Practice Set 2</a></li>
                 <li><a href="#aliases">Aliasing</a></li>
+
             </ol>
         </div>
 
@@ -409,12 +410,30 @@
                         <li class="code">sql> select sql as actual_salary, sal+500 as bonus from emp;</li>
                         <li class="code">select 'good morning' as wish from dual;</li>
                         <li class="code">select empno empID from emp;</li>
-                        <li class="code">select empno emp number from emp;<span class="danger">(It will throw an error)</span></li>
-                        <li class="code">select empno 'emp number' from emp;<span class="danger">(It will throw an error)</span></li>
-                        <li class="code">select empno as 'emp number' from emp;<span class="danger">(It will throw an error)</span></li>
+                        <li class="code">select empno emp number from emp;<span class="danger">(It will throw an
+                                error)</span></li>
+                        <li class="code">select empno 'emp number' from emp;<span class="danger">(It will throw an
+                                error)</span></li>
+                        <li class="code">select empno as 'emp number' from emp;<span class="danger">(It will throw an
+                                error)</span></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="section" id="concatenation">
+            <h2>Concatenation(||):</h2>
+            <ul>
+                <li>It is used to merge the data.</li>
+                <li>Examples:
+                    <ul>
+                        <li class="code">sql> select ename||job from emp;</li>
+                        <li class="code">sql> select ename||' '||job||' ' ||sal from emp;</li>
+                        <li class="code">sql> select ename||' '||job from emp;</li>
+                    </ul>
+                </li>
+            </ul>
+
+
         </div>
 
 
